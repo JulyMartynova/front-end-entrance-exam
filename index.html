@@ -1,13 +1,317 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Создай своё резюме</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="union">
+        <img
+          src="./public/image.png"
+          alt="new name"
+          class="photo"
+          loading="lazy"
+        />
+        <section class="presentation" id="hello">
+          <span class="subtitle">Hello 👋🏻 I’m</span>
+          <div id="main-info">
+            <h1>Karthik SR</h1>
+            <span>UX/UI Designer</span>
+          </div>
+        </section>
+        <section class="presentation" id="languages">
+          <h2>Languages</h2>
+          <div id="language_range">
+            <div class="levels">
+              <span class="subtitle">English</span>
+
+              <span class="subtitle">Malayalam</span>
+
+              <span class="subtitle">Hindi</span>
+            </div>
+            <div class="levels">
+              <div class="range" data-level="100"></div>
+              <div class="range" data-level="100"></div>
+              <div class="range" data-level="80"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="union">
+        <section id="experience">
+          <h2>Experience</h2>
+          <div id="experience_union">
+            <section class="subsection" data-recent>
+              <time datetime="2023-06" data-recent>
+                <span class="year">Jun. 2023 - Present</span>
+                <span class="recent">most recent</span>
+              </time>
+              <div class="duties">
+                <div class="profession">
+                  <h3>Marketing Manager</h3>
+                  <div class="type_of_work">
+                    <span>Pankayam </span>
+                    <span contenteditable="false"> |</span>
+                    <span>Full-time</span>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    Strategy development and planning of campaigns that promote
+                    the business and generate genuine traffic
+                  </li>
+                  <li>SEO Content Creation for Blogs, Website, Social media</li>
+                </ul>
+              </div>
+            </section>
+            <section class="subsection">
+              <time datetime="2017">
+                <span class="year">2017 - Present</span>
+              </time>
+              <div class="duties">
+                <div class="profession">
+                  <h3>Graphic / Web designer</h3>
+                  <div class="type_of_work">
+                    <span>Freelance</span>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    Development of internal projects from scratch, product
+                    design of brands
+                  </li>
+                  <li>Landing page, webapps and hybrid apps</li>
+                  <li>
+                    Coordinating with outside agencies, art services, web
+                    designer, marketing, printers, and colleagues as necessary.
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="subsection">
+              <time datetime="2021-09">
+                <span class="year">Sep. 2021 - Jun. 2023</span>
+              </time>
+              <div class="duties">
+                <div class="profession">
+                  <h3>Legal Assistant</h3>
+                  <div class="type_of_work">
+                    <span>Law Firm </span>
+                    <span contenteditable="false"> |</span>
+                    <span>Intern</span>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    Provide administrative support to lawyer and enhance office
+                    effectiveness
+                  </li>
+                  <li>Handle communication with clients, witnesses etc</li>
+                  <li>
+                    repare case briefs and summarize depositions,
+                    interrogatories and testimony
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section id="tools">
+          <h2>Tools</h2>
+          <div class="group_tools">
+            <section class="all_tools">
+              <span class="tools_title">design</span>
+              <div class="tools-grid">
+                <img
+                  src="./public/figma.svg"
+                  class="tool-icon"
+                  alt="Figma"
+                  loading="lazy"
+                />
+                <img
+                  src="./public/ps.svg"
+                  class="tool-icon"
+                  alt="Photoshop"
+                  loading="lazy"
+                />
+                <img
+                  src="./public/ai.svg"
+                  class="tool-icon"
+                  alt="Ai"
+                  loading="lazy"
+                />
+                <img
+                  src="./public/pr.svg"
+                  class="tool-icon"
+                  alt="Pr"
+                  loading="lazy"
+                />
+                <img
+                  src="./public/notion.svg"
+                  class="tool-icon"
+                  alt="Notion"
+                  loading="lazy"
+                />
+                <img
+                  src="./public/meeting.svg"
+                  class="tool-icon"
+                  alt="GoogleMeet"
+                />
+              </div>
+            </section>
+            <section class="all_tools">
+              <span class="tools_title">no code</span>
+              <div class="tools-grid">
+                <img
+                  src="./public/zapier.svg"
+                  class="tool-icon"
+                  alt="Zapier"
+                  loading="lazy"
+                />
+                <img
+                  src="./public/noflow.svg"
+                  class="tool-icon"
+                  alt="Noflow"
+                  loading="lazy"
+                />
+                <img
+                  src="./public/framer.svg"
+                  class="tool-icon"
+                  alt="Framer"
+                  loading="lazy"
+                />
+                <img
+                  src="./public/wordpress.svg"
+                  class="tool-icon"
+                  alt="Wordpress"
+                  loading="lazy"
+                />
+              </div>
+            </section>
+            <section class="all_tools">
+              <span class="tools_title">artificial intelligence</span>
+              <div class="tools-grid">
+                <img
+                  src="./public/gpt.svg"
+                  class="tool-icon"
+                  alt="ChatGPT"
+                  loading="lazy"
+                />
+                <img
+                  src="./public/copilot.svg"
+                  class="tool-icon"
+                  alt="Copiilot"
+                  loading="lazy"
+                />
+                <img
+                  src="./public/mij.svg"
+                  class="tool-icon"
+                  alt="MIJourney"
+                  loading="lazy"
+                />
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+      <div class="union">
+        <section id="education">
+          <h2>Education</h2>
+          <div id="edu_sections">
+            <div class="subsection" data-recent>
+              <time class="subtitle" data-recent datetime="2017">
+                2023
+                <img
+                  src="./public/heart.svg"
+                  alt="Heart"
+                  id="heart_icon"
+                  loading="lazy"
+                />
+              </time>
+              <div class="edu_name">
+                <span class="subtitle">UI/UX</span>
+                <div class="hashtags" data-recent>
+                  <span>#UX</span> <span>#UI</span> <span>#research</span>
+                  <span>#DesignSystem </span> <span>#Ui</span>
+                  <span>#wireframing</span> <span>#figma</span> <span>#Ux</span>
+                </div>
+              </div>
+              <span>Coursrea</span>
+            </div>
+
+            <div class="subsection">
+              <time class="subtitle" datetime="2017">2017-2022</time>
+              <div class="edu_name">
+                <span class="subtitle">Law</span>
+                <div class="hashtags">
+                  <span>#Law</span>
+                  <span>#legalStudies</span>
+                  <span>#internationalLaws</span>
+                </div>
+              </div>
+              <span>University of Kerala</span>
+            </div>
+            <div class="subsection">
+              <time class="subtitle" datetime="2017">2017</time>
+              <div class="edu_name">
+                <span class="subtitle">Graphic design</span>
+                <div class="hashtags">
+                  <span>#branding</span>
+                  <span>#web</span>
+                  <span>#illustration</span>
+                  <span>#adobe</span>
+                </div>
+              </div>
+              <span>Coursrea</span>
+            </div>
+          </div>
+        </section>
+        <div class="union_sections">
+          <section id="interest">
+            <h2>Interests</h2>
+            <div class="interest_container">
+              <span class="interest_item subtitle">branding</span>
+              <span class="interest_item subtitle">design</span>
+              <span class="interest_item subtitle">photography</span>
+              <span class="interest_item subtitle"
+                >artificial intelligence</span
+              >
+              <span class="interest_item subtitle">illustration</span>
+              <span class="interest_item subtitle">typography</span>
+              <span class="interest_item subtitle">social networks</span>
+              <span class="interest_item subtitle">research</span>
+              <span class="interest_item subtitle">dron pilot</span>
+              <span class="interest_item subtitle">games</span>
+            </div>
+          </section>
+          <section id="contacts">
+            <h2>Let´s chat! I´m ready to work on excinting projects</h2>
+            <address class="subtitle">
+              <a href="mailto:srkarthik.designscape@gmail.com" class="subtitle"
+                >srkarthik.designscape@gmail.com</a
+              >
+            </address>
+          </section>
+        </div>
+      </div>
+    </div>
+    <button id="generatePDF" class="waves-effect waves-dark">
+      Скачать PDF
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
