@@ -77,6 +77,7 @@ function initializeEditableElements() {
     ".year",
     ".duties span",
     ".edu_name span",
+    ".subsection span",
     "address",
     "ul li",
     ".tools_title",

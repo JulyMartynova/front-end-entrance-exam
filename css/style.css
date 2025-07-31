@@ -128,7 +128,8 @@ body {
 #language_range {
   display: flex;
   gap: 17px;
-  flex-direction: column;
+  width: 100%;
+  /* flex-direction: column; */
 }
 a {
   text-decoration: none;
@@ -142,6 +143,14 @@ a {
 .levels {
   display: flex;
   gap: 10px;
+  flex-direction: column;
+}
+
+.levels_range {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-direction: column;
 }
 
 .levels span {
@@ -537,6 +546,10 @@ time[data-recent] {
     gap: 12px;
   }
 
+  .levels_range {
+    gap: 12px;
+  }
+
   section {
     padding: 20px;
     gap: 20px;
@@ -642,6 +655,9 @@ time[data-recent] {
     height: 19px;
   }
   .levels {
+    gap: 14px;
+  }
+  .levels_range {
     gap: 14px;
   }
   .tool-icon {
@@ -757,9 +773,20 @@ time[data-recent] {
   width: 100% !important;
 }
 
+.pdf-export .levels {
+  gap: 12px !important;
+}
+
+.pdf-export .levels_range {
+  gap: 12px !important;
+}
 .pdf-export .photo {
   width: 150px !important;
   object-fit: cover !important;
+}
+
+.pdf-export .range {
+  height: 15px !important;
 }
 
 .pdf-export #hello {
