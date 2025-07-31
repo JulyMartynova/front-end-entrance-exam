@@ -358,10 +358,6 @@ time[data-recent] {
   width: 80%;
 }
 
-.rang:last-child() {
-  width: 70%;
-}
-
 [contenteditable="true"] {
   transition: all 0.3s ease;
 }
